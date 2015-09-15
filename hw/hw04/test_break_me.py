@@ -33,6 +33,7 @@ def test_type_error():
     except TypeError:
         assert(True)
 
-test_type_error()
-test_attribute_error
-test_name_error
+
+henry = test_name_error()
+henry = test_attribute_error()
+# test_type_error()
