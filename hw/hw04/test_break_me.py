@@ -2,11 +2,10 @@
 
 """
 code that tests the break_me.py functions
+
 """
 
 # import pytest  # used for the exception testing
-
-
 import break_me
 
 
@@ -33,3 +32,7 @@ def test_type_error():
         assert(False)
     except TypeError:
         assert(True)
+
+test_type_error()
+test_attribute_error
+test_name_error
