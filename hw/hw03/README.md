@@ -1,5 +1,6 @@
-# sea-c45-python
-Henry Rebbeck
+# Homework 3
+
+# Henry Rebbeck
 ##  Who am I?
 I am a British engineer currently working on a green energy project using kites to [generate power](https://www.kitepowersolutions.com). This project is based in the UK, so I have a fair bit of travel as I live in Seattle with my wife, who works for [Zillow](https://www.zillow.com), and my 2 year old son.
 ## Kites for energy
