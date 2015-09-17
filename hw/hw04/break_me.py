@@ -1,11 +1,12 @@
 def exhibit_name_error():
-    return 4 + undefined_name_produces_name_error * 3
+    4 + undefined_name_produces_name_error * 3
     # Replace this line with something that exhibits a name exhibit_name_error
-    # in this case jack is not defined so it produces a name error
+    # in this case undefined_name_produces_name_error is not defined
+    # so it produces a name error
 
 
 def exhibit_attribute_error():
-    return str.unknown_attribute_produces_attribute_error
+    str.unknown_attribute_produces_attribute_error
     # replace this line with something that exhibits
     # an exhibit_attribute_error
 
