@@ -1,0 +1,124 @@
+Name: ...
+CodeFellows Python F2
+SEA-C45
+Homework 8
+
+For each problem that requires a written answer, write (or copy-and-paste)
+your answers in this file.  
+When you are done, you should have replaced all
+the ellipses (the three dots) with your answers.
+
+
+At the end, you will turn in this file along with your modified
+dna_analysis.py program.
+
+
+
+Problem 1:
+
+(No answers in this file.)
+
+
+
+
+Problem 2:
+
+Sample 1
+
+GC-content: 0.43059987061138255
+
+Sample 2
+GC-content: 0.4514286106147601
+
+Sample 3
+GC-content: 0.646867173111056
+
+Sample 4
+GC-content: 0.3478539791909817
+
+Sample 5
+GC-content: 0.26666666666666666
+
+Sample 6
+GC-content: 0.4917006298629122
+
+
+Problem 3: 
+The program failed with the error 
+linenum = linenum + 1
+NameError: name 'linenum' is not defined
+as linenum had not been initalised so the incrementaion didnt work.
+
+
+
+
+Problem 4:
+$ python dna_analysis.py data/sample_1.fastq
+GC-content: 0.4302926296296296
+AT-content: 0.5689938518518518
+
+
+
+
+
+Problem 5:
+
+
+$ python dna_analysis.py data/sample_1.fastq
+GC-content: 0.43059987061138255
+AT-content: 0.5694001293886175
+G-Count: 5738773
+C-Count: 5879128
+A-Count: 7701287
+T-Count: 7661547
+Sum of G,C,A,T count 26980735
+Total count: 27000000
+Length of sequence: 27000000
+
+
+Problem 6:
+The Sum of G,C,A,T is not the same as Total count, as there are some undefined basepairs (called N)
+These are probably un classified, or errors. (I tracked this down by printing out the base pair if it did
+not equal G,C,A or T)
+As a result the previous GC content was calculated incorrectly as I used (G + C) / total(which includes N) 
+This has been modified to use (G + C) / (G + C + A + T)
+i.e in the denominator use Sum of GCAT not total count.
+
+
+
+
+
+Problem 7:
+
+
+$ python dna_analysis.py data/sample_1.fastq
+GC-content: 0.43059987061138255
+AT-content: 0.5694001293886175
+G-Count: 5738773
+C-Count: 5879128
+A-Count: 7701287
+T-Count: 7661547
+Sum of G,C,A,T count 26980735
+Total count: 27000000
+Length of sequence: 27000000
+AT/GC Ratio:  1.3223416174746196
+
+
+Problem 8:
+
+GC Classification: moderate GC content
+
+
+
+
+Collaboration:
+
+
+This was done alone.
+
+Reflection:
+
+
+Not much to add here, is interesting to do real world examples, rather than academic code. 
+The problem was not as difficult as I thought it initially looked, although I found the going back and foward
+ on the text file a little anoying as the results change when errors are spotted.
